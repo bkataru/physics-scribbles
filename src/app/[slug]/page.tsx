@@ -1,8 +1,8 @@
-import Markdown from 'markdown-to-jsx'
-
 import { getPost, getPostsMetadata } from '@/lib/post'
 
-import type { Post, PostMetadata } from '@/types/post'
+import Markdown from 'markdown-to-jsx'
+
+import { allPosts } from 'contentlayer/generated'
 
 export const generateStaticParams = async (): Promise<{ slug: string }[]> => {
   const posts: PostMetadata[] = getPostsMetadata()

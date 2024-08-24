@@ -20,3 +20,7 @@ const PostPreview: React.FC<PostMetadata> = ({
 }
 
 export default PostPreview
+
+const variable = () => {
+  return <div>Hello There</div>
+}
